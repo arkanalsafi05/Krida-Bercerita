@@ -10,12 +10,6 @@ const nextConfig: NextConfig = {
       },
     ],
   },
-  experimental: {
-    turbo: false
-  } as any, 
-  webpack: (config) => {
-    return config;
-  },
 };
 
 export default nextConfig;
