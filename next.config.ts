@@ -10,6 +10,10 @@ const nextConfig: NextConfig = {
       },
     ],
   },
+  // Tambahkan baris ini untuk mematikan Turbopack secara eksplisit saat build di Vercel
+  webpack: (config) => {
+    return config;
+  },
 };
 
 export default nextConfig;
