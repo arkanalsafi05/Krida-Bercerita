@@ -10,7 +10,10 @@ const nextConfig: NextConfig = {
       },
     ],
   },
-  // Tambahkan baris ini untuk mematikan Turbopack secara eksplisit saat build di Vercel
+  // Mematikan compiler baru secara total agar tidak crash saat build CSS Tailwind v4
+  experimental: {
+    turbo: false
+  } as any, 
   webpack: (config) => {
     return config;
   },
