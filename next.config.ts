@@ -10,7 +10,6 @@ const nextConfig: NextConfig = {
       },
     ],
   },
-  // Mematikan compiler baru secara total agar tidak crash saat build CSS Tailwind v4
   experimental: {
     turbo: false
   } as any, 
